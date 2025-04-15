@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* navigation bar */
 .logo{
     height: 50px;
 }
@@ -48,3 +48,47 @@
     padding: 10px 20px;
     border-radius: 5px;
 }
+/*navigation bar end*/
+
+/*Search section*/
+.mb-container{
+    margin-top: 80px;
+}
+.mb-search-heading{
+    text-align: center;
+    font: 30px sans-serif;
+    padding: 0px 0px 30px;  
+}
+.mb-search-tab-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+
+    & li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font: 1em sans-serif;
+        display: inline-block;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #D82328;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover::after{
+            transform: scaleX(1);
+        }
+    }
+}
+
+
