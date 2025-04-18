@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .society-experts-container {
+        max-width: 100%;
+        padding: 2rem;
+        font-family: "Segoe UI", sans-serif;
+        overflow-x: hidden;
+      }
+
+      .society-experts-container h2 {
+        font-size: 24px;
+        font-weight: 600;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+
+      .society-experts-container h2::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 35px;
+        height: 4px;
+        background-color: #f5b618;
+        border-radius: 2px;
+      }
+
+      .experts-scroll-wrapper {
+        overflow-x: auto;
+        padding-bottom: 10px;
+      }
+
+      .experts-card-container {
+        display: flex;
+        gap: 1.5rem;
+        width: max-content;
+      }
+
+      .expert-card {
+        min-width: 280px;
+        max-width: 280px;
+        background-color: #fff;
+        border: 1px solid #e3e3e3;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        flex-shrink: 0;
+      }
+
+      .avatar {
+        width: 40px;
+        height: 40px;
+        background-color: #fffbe6;
+        border: 1px solid #f5d375;
+        color: #333;
+        font-weight: bold;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+      }
+
+      .expert-card h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #222;
+      }
+
+      .since {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+      }
+
+      .expert-card p {
+        font-size: 15px;
+        line-height: 1.4;
+        color: #444;
+        margin-bottom: 1rem;
+      }
+
+      .expert-card a {
+        color: #d82328;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .expert-card a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <div class="society-experts-container">
+      <h2>Top Society Experts</h2>
+      <div class="experts-scroll-wrapper">
+        <div class="experts-card-container">
+          <div class="expert-card">
+            <div class="avatar">V</div>
+            <h3>Venugopal Verma</h3>
+            <p class="since">Serving Societies Since 2006</p>
+            <p>
+              <strong>Societies served:</strong> Century Ethos, L and T Raintree
+              Boulevard
+            </p>
+            <a href="#">View all 23 Flats →</a>
+          </div>
+          <div class="expert-card">
+            <div class="avatar">L</div>
+            <h3>LIVING BANGALORE</h3>
+            <p class="since">Serving Societies Since 2014</p>
+            <p><strong>Societies served:</strong> Embassy Lake Terraces</p>
+            <a href="#">View all 29 Flats →</a>
+          </div>
+          <div class="expert-card">
+            <div class="avatar">K</div>
+            <h3>Kumar k</h3>
+            <p class="since">Serving Societies</p>
+            <p>
+              <strong>Societies served:</strong> Prestige Falcon City, Elita
+              Promenade
+            </p>
+            <a href="#">View all 25 Flats →</a>
+          </div>
+          <div class="expert-card">
+            <div class="avatar">A</div>
+            <h3>Aryan Singh</h3>
+            <p class="since">Serving Societies Since 2010</p>
+            <p><strong>Societies served:</strong> Sobha Dream Acres</p>
+            <a href="#">View all 15 Flats →</a>
+          </div>
+          <div class="expert-card">
+            <div class="avatar">P</div>
+            <h3>Pooja Mehra</h3>
+            <p class="since">Serving Societies Since 2013</p>
+            <p><strong>Societies served:</strong> Prestige Lakeside Habitat</p>
+            <a href="#">View all 21 Flats →</a>
+          </div>
+          <div class="expert-card">
+            <div class="avatar">R</div>
+            <h3>Ravi Kumar</h3>
+            <p class="since">Serving Societies Since 2018</p>
+            <p><strong>Societies served:</strong> Brigade Metropolis</p>
+            <a href="#">View all 19 Flats →</a>
+          </div>
+          <div class="expert-card">
+            <div class="avatar">M</div>
+            <h3>Manisha Rao</h3>
+            <p class="since">Serving Societies Since 2020</p>
+            <p><strong>Societies served:</strong> Godrej Aqua</p>
+            <a href="#">View all 10 Flats →</a>
+          </div>
+          <div class="expert-card">
+            <div class="avatar">T</div>
+            <h3>Tarun S</h3>
+            <p class="since">Serving Societies Since 2012</p>
+            <p><strong>Societies served:</strong> Purva Palm Beach</p>
+            <a href="#">View all 13 Flats →</a>
+          </div>
+          <div class="expert-card">
+            <div class="avatar">S</div>
+            <h3>Sneha D</h3>
+            <p class="since">Serving Societies Since 2016</p>
+            <p><strong>Societies served:</strong> Prestige Ferns Residency</p>
+            <a href="#">View all 16 Flats →</a>
+          </div>
+          <div class="expert-card">
+            <div class="avatar">B</div>
+            <h3>Bharath M</h3>
+            <p class="since">Serving Societies Since 2015</p>
+            <p><strong>Societies served:</strong> Embassy Pristine</p>
+            <a href="#">View all 14 Flats →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

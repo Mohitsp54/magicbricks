@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>magicbricks</title>
     <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!--Navigation bar-->
@@ -13,24 +14,68 @@
         <li>
           <img src="./public/logo.png" alt="Logo" class="logo" />
         </li>
-        <li class="dropdown">
-          <select name="city">
-            <option value="delhi">Delhi</option>
-            <option value="mumbai">Mumbai</option>
-            <option value="banglore">Banglore</option>
-            <option value="kolkata">Kolkata</option>
-            <option value="chennai">Chennai</option>
-            <option value="hyderabad">Hyderabad</option>
-            <option value="pune">Pune</option>
-            <option value="jaipur">Jaipur</option>
-            <option value="ahmedabad">Ahmedabad</option>
-            <option value="chandigarh">Chandigarh</option>
-            <option value="surat">Surat</option>
-            <option value="indore">Indore</option>
-            <option value="coimbatore">Coimbatore</option>
-            <option value="nagpur">Nagpur</option>
-          </select>
-        </li>
+        <div class="menu">
+          Cities ▼
+          <div class="dropdown">
+            <div class="dropdown-section">
+              <h4>Nearby Cities</h4>
+              <div class="columns">
+                <a href="#">Bangalore - East</a>
+                <a href="#">Bangalore - South</a>
+                <a href="#">Bangalore - West</a>
+                <a href="#">Bangalore - Central</a>
+                <a href="#">Bangalore - North</a>
+              </div>
+            </div>
+    
+            <div class="dropdown-section">
+              <h4>Popular Cities</h4>
+              <div class="columns">
+                <a href="#">Ahmedabad</a>
+                <a href="#">Bangalore</a>
+                <a href="#">Beyond Thane</a>
+                <a href="#">Chennai</a>
+                <a href="#">Gurgaon</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Indore</a>
+                <a href="#">Jaipur</a>
+                <a href="#">Kolkata</a>
+                <a href="#">Lucknow</a>
+                <a href="#">Mumbai</a>
+                <a href="#">Navi Mumbai</a>
+                <a href="#">New Delhi</a>
+                <a href="#">Noida</a>
+                <a href="#">Pune</a>
+              </div>
+            </div>
+    
+            <div class="dropdown-section">
+              <h4>Other Cities</h4>
+              <div class="columns">
+                <a href="#">Agra</a>
+                <a href="#">Ahmadnagar</a>
+                <a href="#">Allahabad</a>
+                <a href="#">Aluva</a>
+                <a href="#">Amritsar</a>
+                <a href="#">Aurangabad</a>
+                <a href="#">Badlapur</a>
+                <a href="#">Bareilly</a>
+                <a href="#">Belgaum</a>
+                <a href="#">Bhiwadi</a>
+                <a href="#">Bhiwandi</a>
+                <a href="#">Bhopal</a>
+                <a href="#">Bhubaneswar</a>
+                <a href="#">Bokaro Steel City</a>
+                <a href="#">Chandigarh</a>
+                <a href="#">Chengalpattu</a>
+                <a href="#">Coimbatore</a>
+                <a href="#">Dehradun</a>
+                <a href="#">Durgapur</a>
+                <a href="#">Ernakulam</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <li class="login"><a href="#login">Login</a></li>
         <li class="post"><a href="#Post">Post Property</a></li>
       </ul>
@@ -44,5 +89,261 @@
         <li><a href="#contact">Home Interiors</a></li>
         <li><a href="#contact">Help</a></li>
       </ul>
+    </nav>
+    <!--End of navigation bar-->
+    <!--Search section-->
+    <section class="mb-search">
+      <div class="mb-container">
+        <div class="mb-search-box">
+          <div class="mb-search-heading">
+            Welcome back! Let’s continue your search
+          </div>
+          <div class="mb-search-tab">
+            <ul class="mb-search-tab-list">
+              <li class="mb-search-tab-item"><a href="#buy">Buy</a></li>
+              <li class="mb-search-tab-item"><a href="#Rent">Rent</a></li>
+              <li class="mb-search-tab-item"><a href="#sell">Sell</a></li>
+              <li class="mb-search-tab-item"><a href="#pg">PG</a></li>
+              <li class="mb-search-tab-item"><a href="#Commercial">Commercial</a></li>
+              <li class="mb-search-tab-item"><a href="#newlaunch">Post Property</a></li>
+            </ul>
+          </div>
+          <div class="mb-search-bar">
+            <div class="mb-search-icon">
+             <i class="fa-solid fa-location-dot search-icon"></i>
+            </div>
+            <input type="text" class="mb-search-input" placeholder="Search for properties" />
+            <div class="mb-search-button">
+              <button class="mb-search-btn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+          </div>
+        </div>
+      </div>
+  <!-- End of Search section-->
+  
+  <!-- Searched Section -->
+  <section class="searched-section">
+    <h2>Because you searched <span>Bangalore</span></h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>
+          <span class="highlight">5K+</span> Properties <br /><small
+            >within ₹15000 - ₹25000</small
+          >
+        </h3>
+        <a href="#">Continue last search →</a>
+        <div class="icon">⏰</div>
+      </div>
+
+      <div class="card">
+        <h3>
+          Get personalised property<br />
+          recommendations from us
+        </h3>
+        <a href="#">See all →</a>
+        <div class="icon">🔑</div>
+      </div>
+
+      <div class="card">
+        <h3>
+          <span class="highlight">100+</span> Owner Properties<br />in
+          bangalore
+        </h3>
+        <a href="#">See all →</a>
+        <div class="icon">🔑</div>
+      </div>
+
+      <div class="card">
+        <h3>
+          <span class="highlight">200+</span> Properties <br />in Popular
+          localities
+        </h3>
+        <a href="#">See all →</a>
+        <div class="icon">📍</div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Searched Section --> 
+  <!-- Agent Section -->
+  <section class="agent-section">
+    <div class="agent-header">
+      <h2>MB Preferred Agents in Bangalore</h2>
+      <a href="#" class="see-all">See all →</a>
+    </div>
+
+    <div class="agent-cards">
+      <!-- Card 1 -->
+      <div class="agent-card">
+        <div class="agent-top">
+          <div>
+            <span class="preferred-badge">MB Preferred</span>
+            <h3>Sai Gruha Rentals</h3>
+          </div>
+        </div>
+        <div class="agency-info">
+          <div>
+            <p><strong>Sai Gruha Rentals</strong></p>
+            <p>Operating Since 2019</p>
+          </div>
+          <p>Buyers Served <strong>7000+</strong></p>
+        </div>
+        <div class="property-stats">
+          <div><strong>1</strong><br />Properties for Sale</div>
+          <div><strong>37</strong><br />Properties for Rent</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="agent-card">
+        <div class="agent-top">
+          <div>
+            <span class="preferred-badge">MB Preferred</span>
+            <h3>Deekshith</h3>
+          </div>
+        </div>
+        <div class="agency-info">
+          <div>
+            <p><strong>Golden Bricks</strong></p>
+            <p>Operating Since 2004</p>
+          </div>
+          <p>Buyers Served <strong>8500+</strong></p>
+        </div>
+        <div class="property-stats">
+          <div><strong>18</strong><br />Properties for Sale</div>
+          <div><strong>11</strong><br />Properties for Rent</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="agent-card">
+        <div class="agent-top">
+          <div>
+            <span class="preferred-badge">MB Preferred</span>
+            <h3>Murari Prasad</h3>
+          </div>
+        </div>
+        <div class="agency-info">
+          <div>
+            <p><strong>Living Bangalore</strong></p>
+            <p>Operating Since 2014</p>
+          </div>
+          <p>Buyers Served <strong>5000+</strong></p>
+        </div>
+        <div class="property-stats">
+          <div><strong>20</strong><br />Properties for Sale</div>
+          <div><strong>29</strong><br />Properties for Rent</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="agent-card">
+        <div class="agent-top">
+          <div>
+            <span class="preferred-badge">MB Preferred</span>
+            <h3>Mohammed Ruaif</h3>
+          </div>
+        </div>
+        <div class="agency-info">
+          <div>
+            <p><strong>P & P Realty</strong></p>
+            <p>Operating Since 2019</p>
+          </div>
+          <p>Buyers Served <strong>3500+</strong></p>
+        </div>
+        <div class="property-stats">
+          <div><strong>37</strong><br />Properties for Sale</div>
+          <div><strong>17</strong><br />Properties for Rent</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Agent Section -->
+  
+  <!-- Society Experts Section -->
+  <div class="society-experts-container">
+    <h2>Top Society Experts</h2>
+    <div class="experts-scroll-wrapper">
+      <div class="experts-card-container">
+        <div class="expert-card">
+          <div class="avatar">V</div>
+          <h3>Venugopal Verma</h3>
+          <p class="since">Serving Societies Since 2006</p>
+          <p>
+            <strong>Societies served:</strong> Century Ethos, L and T Raintree
+            Boulevard
+          </p>
+          <a href="#">View all 23 Flats →</a>
+        </div>
+        <div class="expert-card">
+          <div class="avatar">L</div>
+          <h3>LIVING BANGALORE</h3>
+          <p class="since">Serving Societies Since 2014</p>
+          <p><strong>Societies served:</strong> Embassy Lake Terraces</p>
+          <a href="#">View all 29 Flats →</a>
+        </div>
+        <div class="expert-card">
+          <div class="avatar">K</div>
+          <h3>Kumar k</h3>
+          <p class="since">Serving Societies</p>
+          <p>
+            <strong>Societies served:</strong> Prestige Falcon City, Elita
+            Promenade
+          </p>
+          <a href="#">View all 25 Flats →</a>
+        </div>
+        <div class="expert-card">
+          <div class="avatar">A</div>
+          <h3>Aryan Singh</h3>
+          <p class="since">Serving Societies Since 2010</p>
+          <p><strong>Societies served:</strong> Sobha Dream Acres</p>
+          <a href="#">View all 15 Flats →</a>
+        </div>
+        <div class="expert-card">
+          <div class="avatar">P</div>
+          <h3>Pooja Mehra</h3>
+          <p class="since">Serving Societies Since 2013</p>
+          <p><strong>Societies served:</strong> Prestige Lakeside Habitat</p>
+          <a href="#">View all 21 Flats →</a>
+        </div>
+        <div class="expert-card">
+          <div class="avatar">R</div>
+          <h3>Ravi Kumar</h3>
+          <p class="since">Serving Societies Since 2018</p>
+          <p><strong>Societies served:</strong> Brigade Metropolis</p>
+          <a href="#">View all 19 Flats →</a>
+        </div>
+        <div class="expert-card">
+          <div class="avatar">M</div>
+          <h3>Manisha Rao</h3>
+          <p class="since">Serving Societies Since 2020</p>
+          <p><strong>Societies served:</strong> Godrej Aqua</p>
+          <a href="#">View all 10 Flats →</a>
+        </div>
+        <div class="expert-card">
+          <div class="avatar">T</div>
+          <h3>Tarun S</h3>
+          <p class="since">Serving Societies Since 2012</p>
+          <p><strong>Societies served:</strong> Purva Palm Beach</p>
+          <a href="#">View all 13 Flats →</a>
+        </div>
+        <div class="expert-card">
+          <div class="avatar">S</div>
+          <h3>Sneha D</h3>
+          <p class="since">Serving Societies Since 2016</p>
+          <p><strong>Societies served:</strong> Prestige Ferns Residency</p>
+          <a href="#">View all 16 Flats →</a>
+        </div>
+        <div class="expert-card">
+          <div class="avatar">B</div>
+          <h3>Bharath M</h3>
+          <p class="since">Serving Societies Since 2015</p>
+          <p><strong>Societies served:</strong> Embassy Pristine</p>
+          <a href="#">View all 14 Flats →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Society Experts Section -->
+     <a href="./trial.html" style="margin-left: 500px;font-size: 40px;">Trial</a>
+    </section>
   </body>
 </html>
