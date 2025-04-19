@@ -3,184 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+    <title>Compact Footer</title>
     <style>
-      .society-experts-container {
-        max-width: 100%;
-        padding: 2rem;
-        font-family: "Segoe UI", sans-serif;
-        overflow-x: hidden;
-      }
-
-      .society-experts-container h2 {
-        font-size: 24px;
-        font-weight: 600;
-        position: relative;
-        margin-bottom: 2rem;
-      }
-
-      .society-experts-container h2::after {
-        content: "";
-        position: absolute;
-        bottom: -6px;
-        left: 0;
-        width: 35px;
-        height: 4px;
-        background-color: #f5b618;
-        border-radius: 2px;
-      }
-
-      .experts-scroll-wrapper {
-        overflow-x: auto;
-        padding-bottom: 10px;
-      }
-
-      .experts-card-container {
-        display: flex;
-        gap: 1.5rem;
-        width: max-content;
-      }
-
-      .expert-card {
-        min-width: 280px;
-        max-width: 280px;
-        background-color: #fff;
-        border: 1px solid #e3e3e3;
-        border-radius: 10px;
-        padding: 1.5rem;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-        flex-shrink: 0;
-      }
-
-      .avatar {
-        width: 40px;
-        height: 40px;
-        background-color: #fffbe6;
-        border: 1px solid #f5d375;
-        color: #333;
-        font-weight: bold;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        margin-bottom: 0.5rem;
-      }
-
-      .expert-card h3 {
+      html,
+      body {
+        height: 100%;
         margin: 0;
-        font-size: 18px;
-        color: #222;
+        display: flex;
+        flex-direction: column;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       }
 
-      .since {
-        color: #666;
+      main {
+        flex: 1;
+      }
+
+      .footer {
+        background: #f4f4f4;
+        padding: 20px 40px;
+        font-size: 13px;
+      }
+
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 20px;
+      }
+
+      .footer-section h4 {
+        margin-bottom: 8px;
         font-size: 14px;
-        margin-bottom: 0.5rem;
       }
 
-      .expert-card p {
-        font-size: 15px;
-        line-height: 1.4;
-        color: #444;
-        margin-bottom: 1rem;
-      }
-
-      .expert-card a {
-        color: #d82328;
-        font-weight: 600;
+      .footer-section p,
+      .footer-section a {
+        color: #333;
+        font-size: 12px;
         text-decoration: none;
-        font-size: 15px;
+        margin: 3px 0;
       }
 
-      .expert-card a:hover {
+      .footer-section a:hover {
         text-decoration: underline;
       }
+
+      .app-buttons img {
+        height: 30px;
+        margin-right: 8px;
+        margin-top: 10px;
+        border-radius: 20px;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons span {
+        font-size: 18px;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+        text-align: center;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        font-size: 12px;
+      }
+
+      .footer-disclaimer {
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 11px;
+        color: #555;
+      }
     </style>
-    <div class="society-experts-container">
-      <h2>Top Society Experts</h2>
-      <div class="experts-scroll-wrapper">
-        <div class="experts-card-container">
-          <div class="expert-card">
-            <div class="avatar">V</div>
-            <h3>Venugopal Verma</h3>
-            <p class="since">Serving Societies Since 2006</p>
-            <p>
-              <strong>Societies served:</strong> Century Ethos, L and T Raintree
-              Boulevard
-            </p>
-            <a href="#">View all 23 Flats →</a>
+  </head>
+  <body>
+    <main>
+      <!-- Page content here -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-section">
+          <h4>About Magicbricks</h4>
+          <p>
+            As the largest platform connecting property buyers and sellers, ...
+            <a href="#">Read more</a>
+          </p>
+
+          <h4>More from our Network</h4>
+          <p>Times Now</p>
+          <p>ET Now</p>
+
+          <div class="app-buttons">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/67/Available_on_the_App_Store_%28black%29_SVG.svg"
+              alt="App Store"
+            />
           </div>
-          <div class="expert-card">
-            <div class="avatar">L</div>
-            <h3>LIVING BANGALORE</h3>
-            <p class="since">Serving Societies Since 2014</p>
-            <p><strong>Societies served:</strong> Embassy Lake Terraces</p>
-            <a href="#">View all 29 Flats →</a>
-          </div>
-          <div class="expert-card">
-            <div class="avatar">K</div>
-            <h3>Kumar k</h3>
-            <p class="since">Serving Societies</p>
-            <p>
-              <strong>Societies served:</strong> Prestige Falcon City, Elita
-              Promenade
-            </p>
-            <a href="#">View all 25 Flats →</a>
-          </div>
-          <div class="expert-card">
-            <div class="avatar">A</div>
-            <h3>Aryan Singh</h3>
-            <p class="since">Serving Societies Since 2010</p>
-            <p><strong>Societies served:</strong> Sobha Dream Acres</p>
-            <a href="#">View all 15 Flats →</a>
-          </div>
-          <div class="expert-card">
-            <div class="avatar">P</div>
-            <h3>Pooja Mehra</h3>
-            <p class="since">Serving Societies Since 2013</p>
-            <p><strong>Societies served:</strong> Prestige Lakeside Habitat</p>
-            <a href="#">View all 21 Flats →</a>
-          </div>
-          <div class="expert-card">
-            <div class="avatar">R</div>
-            <h3>Ravi Kumar</h3>
-            <p class="since">Serving Societies Since 2018</p>
-            <p><strong>Societies served:</strong> Brigade Metropolis</p>
-            <a href="#">View all 19 Flats →</a>
-          </div>
-          <div class="expert-card">
-            <div class="avatar">M</div>
-            <h3>Manisha Rao</h3>
-            <p class="since">Serving Societies Since 2020</p>
-            <p><strong>Societies served:</strong> Godrej Aqua</p>
-            <a href="#">View all 10 Flats →</a>
-          </div>
-          <div class="expert-card">
-            <div class="avatar">T</div>
-            <h3>Tarun S</h3>
-            <p class="since">Serving Societies Since 2012</p>
-            <p><strong>Societies served:</strong> Purva Palm Beach</p>
-            <a href="#">View all 13 Flats →</a>
-          </div>
-          <div class="expert-card">
-            <div class="avatar">S</div>
-            <h3>Sneha D</h3>
-            <p class="since">Serving Societies Since 2016</p>
-            <p><strong>Societies served:</strong> Prestige Ferns Residency</p>
-            <a href="#">View all 16 Flats →</a>
-          </div>
-          <div class="expert-card">
-            <div class="avatar">B</div>
-            <h3>Bharath M</h3>
-            <p class="since">Serving Societies Since 2015</p>
-            <p><strong>Societies served:</strong> Embassy Pristine</p>
-            <a href="#">View all 14 Flats →</a>
+
+          <div class="social-icons">
+            <span>🔵</span>
+            <span>⚫</span>
+            <span>🔷</span>
+            <span>🔴</span>
+            <span>🟣</span>
           </div>
         </div>
+
+        <div class="footer-section">
+          <h4>Properties in India</h4>
+          <p>
+            <a href="#">Property in New Delhi</a> | <a href="#">Mumbai</a> |
+            <a href="#">Chennai</a> | <a href="#">Pune</a>
+          </p>
+          <p>
+            <a href="#">Noida</a> | <a href="#">Gurgaon</a> |
+            <a href="#">Bangalore</a> | <a href="#">Ahmedabad</a>
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>New Projects in India</h4>
+          <p>
+            <a href="#">New Projects in New Delhi</a> | <a href="#">Mumbai</a> |
+            <a href="#">Chennai</a>
+          </p>
+          <p>
+            <a href="#">Pune</a> | <a href="#">Noida</a> |
+            <a href="#">Gurgaon</a>
+          </p>
+          <p><a href="#">Bangalore</a> | <a href="#">Ahmedabad</a></p>
+        </div>
       </div>
-    </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Sitemap</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Whistle Blower</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Testimonials</a>
+          <a href="#">Unsubscribe</a>
+          <a href="#">Help</a>
+          <a href="#">Sales Enquiry</a>
+          <a href="#">Buy Services</a>
+        </div>
+        <div class="footer-disclaimer">
+          Disclaimer: Magicbricks Realty Services Limited is only an
+          intermediary offering its platform to advertise properties for Seller
+          for a Customer/Buyer/User ... <a href="#">Read more</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

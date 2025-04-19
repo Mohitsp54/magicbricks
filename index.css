@@ -531,5 +531,342 @@
     text-decoration: underline;
   }
   /* End of expert section */
+  
+  /* Advice section */
+  .advice-section{
+    margin-left: 30px;
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
 
+  .underline {
+    border-bottom: 3px solid #00bcd4;
+    padding-bottom: 5px;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .card img {
+    width: 32px;
+    margin-bottom: 15px;
+  }
+
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .card p {
+    margin: 0 0 20px;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .card a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  /*End of advice section */
+/* Industry insights */
+  .insights-section{
+    margin: 40px 30px 0px 30px;
+  }
+.real-estate-heading {
+  font-size: 28px;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.real-estate-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 50px;
+  height: 3px;
+  background-color: #d32f2f;
+  border-radius: 2px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: 3px solid #d32f2f;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.insight-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.insight-link:hover {
+  color: #d32f2f;
+}
+
+.insight-link:last-child {
+  border-bottom: none;
+}
+
+.insight-link img {
+  width: 18px;
+  margin-top: 4px;
+}
+
+.see-all {
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+}
+
+.legal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.legal-item img.thumb {
+  width: 70px;
+  height: 60px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.legal-text {
+  flex: 1;
+}
+
+.legal-text div {
+  margin-bottom: 5px;
+}
+
+.legal-text a {
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.legal-text a:hover {
+  text-decoration: underline;
+}
+
+.explore-btn {
+  text-decoration: none;
+  align-self: flex-end;
+  margin-top: auto;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.explore-btn a {
+  color: white;
+  text-decoration: none;
+}
+.explore-btn:hover {
+  background-color: #b71c1c;
+}
+/* End of industry insights */
+/* banner */
+.property-banner {
+  margin: 40px 30px 40px 30px;
+  background-color: #fff8e6;
+  border-radius: 10px;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.banner-text {
+  color: #333;
+}
+
+.banner-text h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.banner-text h3 .highlight {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.banner-text p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #555;
+}
+.post-btn a{
+  text-decoration: none;
+  color: black;
+}
+.post-btn {
+  background-color: #fbc02d;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+  background-color: white;
+  color: #333;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 12px;
+}
+/* End of banner */
+/* Footer */
+.footer {
+  background: #f4f4f4;
+  padding: 20px 40px;
+  font-size: 13px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #333;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 3px 0;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.app-buttons img {
+  height: 30px;
+  margin-right: 8px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons span {
+  font-size: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+}
+.footer-links a:hover{
+  color: #D82328;
+}
+.footer-disclaimer {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 11px;
+  color: #555;
+}
 
